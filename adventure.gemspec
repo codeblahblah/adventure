@@ -3,9 +3,9 @@ require File.expand_path('../lib/adventure/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["drammopo"]
-  gem.email         = ["drammopo@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.email         = ["user@example.com"]
+  gem.description   = %q{Implement the Episode 5 Adventure app as a gem}
+  gem.summary       = %q{Creating adventures using data access}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
