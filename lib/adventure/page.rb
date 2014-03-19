@@ -1,3 +1,5 @@
+require "active_record"
+
 class Page < ActiveRecord::Base
 
   def self.starting_point
