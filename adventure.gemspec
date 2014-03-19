@@ -14,4 +14,11 @@ Gem::Specification.new do |gem|
   gem.name          = "adventure"
   gem.require_paths = ["lib"]
   gem.version       = Adventure::VERSION
+
+  # specify any dependencies here; for example:
+  gem.add_development_dependency "rspec"
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'activesupport'
+  gem.add_development_dependency 'activerecord'
+  gem.add_development_dependency 'pg'
 end
