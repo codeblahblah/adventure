@@ -4,6 +4,8 @@ require "bundler/setup"
 
 require 'rspec/core/rake_task'
 
+RSpec::Core::RakeTask.new
+
 desc 'Default: run specs.'
 task :default => :spec
 
@@ -17,12 +19,14 @@ namespace :adventure do
   desc "Migrates database"
     task :migrate do
     puts "Migrating development database"
-    Rake::Task["migrate"].invoke 
+      require_relative './db/setup'
+      ActiveRecord::Migration.verbose = ENV["VERBOSE"] ? ENV["VERBOSE"] == "true" : true
+      ActiveRecord::Migrator.migrate("/db/migrate/", '001')
   end
 
   desc "Seeds database"
     task :seed do
     puts "Seeding development database"
-    Rake::Task["seed"].invoke 
+    Rake::Task["seed"].invoke
   end
 end
