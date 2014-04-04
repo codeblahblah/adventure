@@ -8,8 +8,21 @@ desc 'Default: run specs.'
 task :default => :spec
 
 namespace :adventure do
-  desc "You first Rake task"
-    task :hello do
-    puts "Hello world!!!"
+
+  desc "Tell me the version of the gem"
+    task :version do
+    	puts "You're using version {} of the gem."
+    end
+
+  desc "Migrates database"
+    task :migrate do
+    puts "Migrating development database"
+    Rake::Task["migrate"].invoke 
+  end
+
+  desc "Seeds database"
+    task :seed do
+    puts "Seeding development database"
+    Rake::Task["seed"].invoke 
   end
 end
