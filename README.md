@@ -24,7 +24,7 @@ page = Page.create(starting_point: true, content: "You wake up on a road. It's f
 book = Book.new(page)
 ```
 
-Show Links
+Links
 ----------
 
 * https://github.com/janko-m/sinatra-activerecord
