@@ -1,6 +1,6 @@
 # Adventure
 
-TODO: Write a gem description
+A Ruby gem for a choose your own adventure game.
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+page = Page.create(starting_point: true, content: "You wake up on a road. It's foggy and dampy. In your bag is 30 gold pieces and a bacon sandwich. Which do you choose?")
+
+book = Book.new(page)
+```
 
 ## Contributing
 
