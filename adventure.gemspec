@@ -20,6 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'activesupport'
   gem.add_development_dependency 'activerecord'
-  gem.add_development_dependency 'pg'
   gem.add_development_dependency 'sqlite3'
 end
