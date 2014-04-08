@@ -1,4 +1,3 @@
-module Adventure
 	class Page < ActiveRecord::Base
 
 	  def self.starting_point
@@ -9,4 +8,3 @@ module Adventure
 	    Page.where(:parent_id => id).limit(2)
 	  end
 	end
-end

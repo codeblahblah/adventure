@@ -28,7 +28,7 @@ describe Book do
 	describe "#complete_game?" do
 
 		it "should know when it's done" do
-			subject.stub(:current_page) { stub(:conclusion? => true)}
+			subject.stub(:current_page) { double(:conclusion? => true)}
 			subject.complete_game?.should be_true
 		end
 	end
