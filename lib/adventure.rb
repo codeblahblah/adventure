@@ -8,3 +8,7 @@ module Adventure
     "Adventure version #{Adventure::VERSION}"
   end
 end
+
+module Adventure
+  require 'adventure/railtie' if defined?(Rails)
+end
