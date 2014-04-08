@@ -2,9 +2,9 @@ require_relative "spec_helper"
 
 require "spec_helper"
 
-describe Book do
+describe Adventure::Book do
 	let!(:page) {Page.create(starting_point: true)}
-	subject { Book.new(page) }
+	subject { Adventure::Book.new(page) }
 
 	it "should have a page" do
 		subject.current_page.should eq(page)

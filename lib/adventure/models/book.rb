@@ -1,3 +1,4 @@
+module Adventure
   class Book
 
     attr_reader :current_page
@@ -18,5 +19,5 @@
       current_page.conclusion?
     end
   end
-
+end
 
