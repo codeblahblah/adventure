@@ -4,5 +4,7 @@ require_relative 'adventure/models/book'
 require_relative 'adventure/models/page'
 
 module Adventure
-  # Your code goes here...
+  def self.version_string
+    "Adventure version #{Adventure::VERSION}"
+  end
 end

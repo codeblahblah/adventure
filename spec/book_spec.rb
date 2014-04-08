@@ -1,5 +1,7 @@
 require_relative "spec_helper"
 
+require "spec_helper"
+
 describe Book do
 	let!(:page) {Page.create(starting_point: true)}
 	subject { Book.new(page) }
