@@ -1,7 +1,0 @@
-host: 'localhost'
-adapter: 'postgresql'
-database: 'episode5'
-username:  drammopo
-password: 'ruby'
-encoding: 'utf8'
-pool: 5
