@@ -73,9 +73,9 @@ And that's it, you're all set :)
 ## Usage
 
 ```ruby
-page = Page.create(starting_point: true, content: "You wake up on a road. It's foggy and dampy. In your bag is 30 gold pieces and a bacon sandwich. Which do you choose?")
+page = Adventure::Page.create(starting_point: true, content: "You wake up on a road. It's foggy and dampy. In your bag is 30 gold pieces and a bacon sandwich. Which do you choose?")
 
-book = Book.new(page)
+book = Adventure::Book.new(page)
 ```
 
 Links
